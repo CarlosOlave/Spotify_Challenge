@@ -14,18 +14,24 @@ Output
 ==========
 Output one line with one integer, the number we get by reversing the binary representation of N.
 
-Sample Input 1				Sample Output 1
-13					11
+Sample Input 1: 13
 
-Sample Input 2				Sample Output 2
-47					61
+Sample Output 1: 11
+
+Sample Input 2: 47
+
+Sample Output 2: 61
 
 Solution
 ==========
 
 A) Convert input into binary representation. Two options:
+
 	1) Short division by two with remainder (my kindergarten solution, jajaja) 
 	2) Comparison with descending powers of two and subtraction (little more complicated)
+	
 B) Use a stack to store binary representation. i.e. 13 => 1101 => stack will contain 1011
+
 C) Since binary is a base-2 system, each digit represents an increasing power of 2, with the rightmost digit representing 2^0. Use this to convert binary back to integer.
+
 D) Juicy J… ones, fives, tens, twienties, Your are done!
