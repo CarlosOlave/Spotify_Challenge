@@ -16,35 +16,44 @@ Input
 ==========
 Output a list of the m songs with the highest quality qi, in decreasing order of quality. If two songs have the same quality, give precedence to the one appearing first on the album (presumably there was a reason for the producers to put that song before the other).
 
-Sample Input 1				Sample Output 1
-4 2					four
-30 one					two
-30 two
-15 three
-25 four
+ Sample Input 1  
+ 4 2  
+ 30 one  
+ 30 two  
+ 15 three  
+ 25 four  
+ 
+ Sample Output 1  
+ four  
+ two
 
-Sample Input 2				Sample Output 2
-15 3					19_2000
-197812 re_hash				clint_eastwood
-78906 5_4				tomorrow_comes_today
-189518 tomorrow_comes_today
-39453 new_genious
-210492 clint_eastwood
-26302 man_research
-22544 punk
-19727 sound_check
-17535 double_bass
-18782 rock_the_house
-198189 19_2000
-13151 latin_simone
-12139 starshine
-11272 slow_country
-10521 m1_a1
-
+ Sample Input 2  
+ 15 3  
+ 197812 re_hash  
+ 78906 5_4  
+ 189518 tomorrow_comes_today  
+ 39453 new_genious  
+ 210492 clint_eastwood  
+ 26302 man_research  
+ 22544 punk  
+ 19727 sound_check  
+ 17535 double_bass  
+ 18782 rock_the_house  
+ 198189 19_2000  
+ 13151 latin_simone  
+ 12139 starshine  
+ 11272 slow_country  
+ 10521 m1_a1  
+ 
+ Sample Output 2  
+ 19_2000  
+ clint_eastwood  
+ tomorrow_comes_today  
+ 
 Solution
 ==========
-A) Use an array to store each song and play count (quality => qi = fi/zi)
-B) Sort array by play count (the trick is to do it using an stable sort since we need to preserve the precedence of two songs with same quality)
-C) Print result.
+A) Use an array to store each song and play count (quality => qi = fi/zi)  
+B) Sort array by play count (the trick is to do it using an stable sort since we need to preserve the precedence of two songs with same quality)  
+C) Print result.  
 D) Quimbara… you are done!!!!
 
